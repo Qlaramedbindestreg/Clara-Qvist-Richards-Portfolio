@@ -1,0 +1,124 @@
+/*--------- style sheets -------------*/
+@import url(css/layout.css);
+@import url(moduler/header.css);
+@import url(moduler/karrusel.css);
+@import url(moduler/footer.css);
+
+/*-------------- font ----------------*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/*-------------- resets --------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "IBM Plex Sans", serif; 
+    color: black;
+}
+
+/*-------------main------------------*/
+body {
+    background: url('/img/gardin.jpg') repeat;
+}
+
+video {
+    position: relative;
+    z-index: -100;
+    object-fit: cover;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    object-fit: cover; 
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 100px;
+    color: #f8f4ec;
+}
+
+.maintext {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    font-size: xx-large;
+}
+
+.bgvideo {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 100%;
+}
+
+.content {
+    display: grid;
+    grid-template-rows: 100px auto 280px;
+}
+
+.cvstyle {
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.cvstyle2 {
+    color: black;   
+    display: flex;
+    flex-direction: column;
+    font-size: xx-large;
+}
+
+/*------------ kontakt ---------------*/
+
+.kontakt-wrapper {
+    display: flex;
+    flex-direction: column;
+    color: #f8f4ec;
+    align-items: center;
+}
+
+.kontakt-wrapper .details {
+    font-size: 20px;
+    padding: 30px;
+}
+
+.kontakt-wrapper .details a {
+    color: #f8f4ec;
+
+}
+
+/*--------- mobile version ------------*/
+@media (max-width: 768px) {
+    body {
+        background: url('/img/gardin.jpg');
+        background-size: cover;
+    }
+
+    video {
+        display: none;
+    }
+}

@@ -1,0 +1,64 @@
+.web-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.kommunikation-wrapper {
+    text-align: center;
+}
+
+.kom-title {
+    color: #f8f4ec;;
+}
+
+.gallery {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.gallery p {
+   padding: 50px;
+   margin-left: 100px;
+   margin-right: 100px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
+}
+
+.gallery-item {
+    background-color: (248, 244, 236, 0.6);
+    border-radius: 5px;
+    padding: 10px;
+    transition: transform 0.2s; 
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); 
+}
+
+.gallery-item img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 5px; 
+    transition: transform 0.5s ease-in-out;
+}
+
+.gallery-item p {
+    margin: 10px 0 0;
+    font-weight: bold; 
+}
+
+
+.gallery-item:hover img {
+    transform: scale(3); 
+}
+
+.kultur-img {
+    width: 100px;
+    height: 100px;
+}

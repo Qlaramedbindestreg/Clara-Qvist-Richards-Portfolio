@@ -1,0 +1,90 @@
+
+.cv-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 100px;
+    box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.2);
+    color: #4682d0;
+    background-color:  rgba(248, 244, 236, 0.6);
+    border-radius: 15px;
+}
+
+.details {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cv-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.cv-container p {
+    font-size: 1.1em;
+}
+
+.cv-container a {
+    color: #4682d0;
+    text-decoration: none;
+}
+
+.cv-container h2 {
+    color: #4682d0;
+    margin-top: 20px;
+    border-bottom: 2px solid #444;
+    padding-bottom: 5px;
+}
+
+.cv-container ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.cv-container ul li {
+    margin-bottom: 5px;
+    word-wrap: break-word;
+}
+
+.cv-container blockquote {
+    font-style: italic;
+    color: #666;
+    margin: 10px 0;
+}
+
+.cv-container blockquote cite {
+    display: block;
+    margin-top: 5px;
+    font-style: normal;
+    color: #333;
+}
+
+.cv-container .job, .education-item {
+    margin-top: 15px;
+}
+
+.cv-container .job h3, .education-item h3 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+.cv-container p {
+    margin-bottom: 15px;
+}
+
+.cv-container .education-item p {
+    margin-bottom: 10px;
+}
+
+.cv-container .skills {
+    display: flex;             
+    flex-wrap: wrap;           
+    justify-content: space-between; 
+    
+}
+
+.cv-container .skills p {
+    flex: 0 0 calc(50% - 10px);  
+    margin: 5px;    
+    padding: 10px;           
+}
