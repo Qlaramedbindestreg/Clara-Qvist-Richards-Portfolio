@@ -9,6 +9,8 @@ footer {
     grid-column-start: 1;
     grid-column-end: 2;  
     backdrop-filter: blur(10px);
+    border-bottom: 1px solid #4682d0;
+    border-top: 1px solid #4682d0;
 }
 
 
@@ -20,8 +22,6 @@ footer {
 
 
 .footerwrap1 {
-    border-bottom: 1px solid #4682d0;
-    border-top: 1px solid #4682d0;
     align-items: flex-start;
    padding: 30px;
 }
@@ -30,12 +30,13 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    color: #f8f4ec;
+    color: #4682d0;
 
 }
 
 .footerwrap1  a {
     text-decoration: none;
+   
 }
 
 .inline {
