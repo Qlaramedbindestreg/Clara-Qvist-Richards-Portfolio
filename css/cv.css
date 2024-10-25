@@ -32,7 +32,8 @@
 .cv-container h2 {
     color: #4682d0;
     margin-top: 20px;
-    border-bottom: 2px solid #444;
+    border-bottom: 2px solid #f8f4ec;
+    margin-bottom: 20px;
     padding-bottom: 5px;
 }
 
