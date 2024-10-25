@@ -8,6 +8,7 @@ footer {
     grid-row-end: 4;
     grid-column-start: 1;
     grid-column-end: 2;  
+    backdrop-filter: blur(10px);
 }
 
 

@@ -23,15 +23,18 @@
 }
 
 .project-card {
-    background-color: rgba(248, 244, 236, 0.6);
+    backdrop-filter: blur(25px);
+    background-color: rgba(248, 244, 236, 0.5);
     border-radius: 5px;
     padding: 30px;
     margin: 10px;
     width: 250px;
-    height: 250px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     color: #4682d0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .view-project {
