@@ -6,6 +6,7 @@
     <title>Clara Qvist-Richards' Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="script.js" defer></script>
+    <script src="pop-up.js" defer></script>
 </head>
 <body>
     <div class="content">
@@ -23,9 +24,19 @@
                 <li><a href="webudvikling.html">WEBUDVIKLING</a></li>
                 <li><a href="kommunikation.html">KOMMUNIKATION</a></li>
                 <li><a href="cv.html">CV</a></li>
-                <li><a href="kontakt.html">KONTAKT</a></li>
+            
             </ul>
         </nav>
+        <button class="kontakt" onclick="togglePopup()">Kontakt</button>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+              <span class="close-btn details" onclick="togglePopup()">&times;</span>
+           
+                <p>Email: <a href="mailto:claraaqn@hotmail.com">claraaqn@hotmail.com</a></p>
+                <p>Mobil: 42 24 79 31</p>
+         
+            </div>
+          </div>
     </header>
 
 <main>
@@ -36,7 +47,7 @@
         <section class="intro">
             <h2>WEBUDVIKLER STUDERENDE SØGER PRAKTIK</h2>
             <p>Jeg er en kreativ webudviklerstuderende med omfattende erfaring inden for kommunikation. Jeg har en international baggrund inden for kultur og events og har erfaring med både visuel og strategisk kommunikation.</p>
-            <p>Min primære erfaring ligger inden for samtidskunstssektoren, men jeg ønsker nu at skifte fokus til webudvikling og søger derfor praktik erfaring inden for dette område.</p>
+            <p>Min primære erfaring ligger inden for samtidskunstssektoren, men jeg ønsker nu at skifte fokus til webudvikling og søger derfor praktisk erfaring inden for dette område.</p>
         </section>
 
         <section>
@@ -181,11 +192,7 @@
                                     CV
                                 </li>
                             </a>
-                            <a href="kontakt.html">
-                                <li>
-                                    KONTAKT
-                                </li>
-                            </a>
+                          
                         </ul>
                     </nav>
       
