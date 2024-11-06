@@ -20,9 +20,7 @@ html {
 }
 
 /*-------------main------------------*/
-body {
-    background: url('/img/gardin.jpg') repeat;
-}
+
 
 video {
     position: relative;
@@ -39,11 +37,8 @@ video {
 main {
     display: flex;
     justify-content: center;
-    padding: 30px;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    padding: 50px;
+
 }
 
 
@@ -53,6 +48,7 @@ main {
     align-items: flex-start;
     margin-top: 100px;
     color: #f8f4ec;
+    padding: 100px;
 }
 
 .maintext {
@@ -66,17 +62,9 @@ main {
 }
 
 .bgvideo {
-    grid-row-start: 1;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 2;
     width: 100%;
 }
 
-.content {
-    display: grid;
-    grid-template-rows: 100px auto 280px;
-}
 
 .cvstyle {
     color: black;
@@ -92,33 +80,33 @@ main {
     font-size: xx-large;
 }
 
-/*------------ kontakt ---------------*/
 
-.kontakt-wrapper {
-    display: flex;
-    flex-direction: column;
-    color: #f8f4ec;
-    align-items: center;
-}
-
-.kontakt-wrapper .details {
-    font-size: 20px;
-    padding: 30px;
-}
-
-.kontakt-wrapper .details a {
-    color: #f8f4ec;
-
-}
 
 /*--------- mobile version ------------*/
 @media (max-width: 768px) {
-    body {
-        background: url('/img/gardin.jpg');
-        background-size: cover;
+    main {
+        padding: 30px; 
     }
 
-    video {
-        display: none;
+    .wrapper {
+        padding: 50px; 
+        margin-top: 50px; 
+        align-items: center; 
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 20px; 
+    }
+
+    .maintext {
+        padding: 20px;
+    }
+
+    .wrapper {
+        padding: 50px; 
+        margin-top: 20px; 
+        align-items: center;
     }
 }
