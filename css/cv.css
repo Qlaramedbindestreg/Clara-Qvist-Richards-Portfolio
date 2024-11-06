@@ -89,3 +89,70 @@
     margin: 5px;    
     padding: 10px;           
 }
+
+@media (max-width: 768px) {
+    .cv-container {
+        padding: 30px;
+    }
+
+    .cv-container h1 {
+        font-size: 2em;
+    }
+
+    .cv-container h2 {
+        font-size: 1.5em;
+    }
+
+    .cv-container p {
+        font-size: 1em;
+    }
+
+    .cv-container .skills p {
+        flex: 0 0 calc(100% - 10px); 
+    }
+
+    .cv-container .job h3, .education-item h3 {
+        font-size: 1.1em;
+    }
+
+    .cv-container ul li {
+        font-size: 0.9em; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .cv-container {
+        padding: 20px;
+    }
+
+    .cv-container h1 {
+        font-size: 1.8em;
+    }
+
+    .cv-container h2 {
+        font-size: 1.3em;
+    }
+
+    .cv-container p {
+        font-size: 0.9em;
+    }
+
+    .cv-container .skills p {
+        flex: 0 0 100%; 
+        margin: 10px 0;
+        padding: 8px;
+    }
+
+    .cv-container .job h3, .education-item h3 {
+        font-size: 1em;
+    }
+
+    .cv-container .education-item p {
+        font-size: 0.9em;
+    }
+
+    .cv-container ul li {
+        font-size: 0.8em; 
+    }
+}

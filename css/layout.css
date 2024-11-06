@@ -21,6 +21,13 @@ html {
 
 /*-------------main------------------*/
 
+body {
+    min-height: 100vh;  
+    background-image: url('fallback.png');
+    background-repeat: repeat;
+    background-size: auto;
+}
+
 
 video {
     position: relative;
