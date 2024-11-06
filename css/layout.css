@@ -80,6 +80,19 @@ main {
     font-size: xx-large;
 }
 
+.content {
+    position: relative; 
+    background: url('fallback.png') no-repeat center center fixed;
+    background-size: cover; 
+    background-attachment: fixed; 
+    min-height: 100vh; 
+    overflow: hidden; 
+}
+
+
+.content {
+    background-repeat: repeat; 
+}
 
 
 /*--------- mobile version ------------*/
@@ -92,6 +105,9 @@ main {
         padding: 50px; 
         margin-top: 50px; 
         align-items: center; 
+    }
+    .content {
+        background-size: auto; 
     }
 }
 
@@ -108,5 +124,8 @@ main {
        
         margin-top: 20px; 
         align-items: center;
+    }
+    .content {
+        background-size: auto; 
     }
 }
