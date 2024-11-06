@@ -109,11 +109,14 @@ header {
     cursor: pointer;
   }
 
+  /*--------- burger menu ---------*/
+
   .burger-menu {
     display: none;
     flex-direction: column;
     cursor: pointer;
     gap: 4px;
+    margin-top: 20px;
 }
 
 .burger-menu span {

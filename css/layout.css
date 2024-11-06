@@ -100,12 +100,12 @@ main {
         padding: 20px; 
     }
 
-    .maintext {
+    .wrapper h2 {
         padding: 20px;
     }
 
     .wrapper {
-        padding: 50px; 
+       
         margin-top: 20px; 
         align-items: center;
     }
