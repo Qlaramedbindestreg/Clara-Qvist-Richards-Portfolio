@@ -1,10 +1,6 @@
 /*------- header-----------*/
 header {
-    padding: 30px;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 2;   
+    padding: 30px; 
 
 }
 
@@ -112,5 +108,49 @@ header {
     font-size: 24px;
     cursor: pointer;
   }
-  
 
+  .burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.burger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #f8f4ec;
+    transition: all 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+
+    .headernav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #4682d038;
+        backdrop-filter: blur(10px);
+        position: absolute;
+        top: 70px; 
+        right: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .headernav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+ 
+    .headernav.active {
+        display: flex;
+    }
+}
