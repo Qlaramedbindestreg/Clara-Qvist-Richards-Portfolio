@@ -124,6 +124,10 @@ footer {
     .footerwrap2 li {
         text-align: center; 
     }
+
+    .footernav {
+        display: none;
+    }
 }
 
 

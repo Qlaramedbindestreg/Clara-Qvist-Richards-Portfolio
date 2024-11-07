@@ -7,6 +7,7 @@
     color: #4682d0;
     background-color:  rgba(248, 244, 236, 0.6);
     border-radius: 15px;
+   
 }
 
 .details {
@@ -122,10 +123,19 @@
 
 
 @media (max-width: 480px) {
+   
+
+
+
     .cv-container {
         padding: 20px;
+        max-width: 900px;
+        margin: 0 auto;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        color: #4682d0;
+        background-color: rgba(248, 244, 236, 0.6);
+        border-radius: 15px;
     }
-
     .cv-container h1 {
         font-size: 1.8em;
     }
@@ -155,4 +165,7 @@
     .cv-container ul li {
         font-size: 0.8em; 
     }
+
+
+    
 }
