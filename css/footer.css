@@ -6,8 +6,6 @@ footer {
     align-items: flex-start;
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.224);
-    border-bottom: 1px solid  #f8f4ec;
-    border-top: 1px solid  #f8f4ec;
     height: 200px;
     margin-top: 40px;
 
@@ -32,11 +30,14 @@ footer {
     flex-direction: column;
     gap: 10px;
     color: #4682d0;
+    transition: color 0.3s ease;
+    font-weight: 600;
 
 }
 
 .footerwrap1  a {
     text-decoration: none;
+    color: #4682d0;
    
 }
 
@@ -50,17 +51,48 @@ footer {
     display: flex;
     gap: 20px;
     padding: 50px;
+    flex-direction: column;
+ 
 
 }
 
 
 .footernav ul {
     list-style: none; 
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+
    
 }
+
+
 .footernav a {
     text-decoration: none;
     color: #4682d0;
+    transition: color 0.3s ease;
+    font-weight: 600;
+      position: relative;
+      display: inline-block;
+   
+}
+.footernav a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
+    background-color: #4682d0;;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.footernav a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
 }
 
 @media (max-width: 768px) {
